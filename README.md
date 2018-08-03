@@ -22,7 +22,7 @@ OM.buildModel('Package.TESTS.TEST_STAR');OM.getErrorString('');
 [~,Build]=OM.Launch('Wait')
 end
 
-%% paths to built stuff and result file to be created
+<font color="green"> %% paths to built stuff and result file to be create </font> 
 
 %execute this
 path_exe='C:\...\OMResults\Package.TESTS.TEST_STAR.exe';
