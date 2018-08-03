@@ -40,7 +40,7 @@ OVR{2}=['SomeComponent.SomeOfItsParameter=','1'];
 % make it into one string
 override=join(OVR,', ')
 
-%% Run the executable with all flags (this will be made nicer into function nicer function call in future)
+%% Run the executable with all flags (this will be made into function call in the future (maybe..))
 [~,Run]=RunBuiltOMModel([path_exe,' -inputPath=',path_input,' -r ',result_file,' -override ',override, ' -cpu'],'Wait')
 
 % Translate .mat into struct (using https://www.mathworks.com/matlabcentral/fileexchange/49015-modelicaimport)
