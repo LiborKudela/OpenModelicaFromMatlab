@@ -62,23 +62,23 @@ The res variable is struct with results. You can use dot notation to go through 
 You can also use flags for compiler.
 If you do not simulate model but only build the executeble by using:
 
-'''
+```
 >> 1st_Script.build('YourPackage.YourModel')
-'''
+```
 
 Then you can use folowing command to run the executable and use flags like overrides. For example:
 
 ```
 >> RunBuiltOMModel([string('OMResults\YourPackage.YourModel.exe'),' -override stopTime=3,Component.Parameter1=5'],'Wait')
 ```
+
 The res variable can be obtained in the same way as above.
 You can write your own function which may run several executables at once.
 You can run the same executable simultaniously several times each with different override.
 You can write wrraper around RunBuiltOMMOdel which can assign overrides automaticaly, 
 which is useful for lagre parametrical studies or Monte Carlo type simulations.
 
-
-The proper use requires some reading:
+# The proper use requires some reading:
 
 The scripting commands (including the use of Debug and Compiler flags)
 https://build.openmodelica.org/Documentation/OpenModelica.Scripting.html
