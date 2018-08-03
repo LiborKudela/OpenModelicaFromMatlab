@@ -7,7 +7,7 @@ Almost all OM scripting available in Matlab.
 Hints using TAB in Matlab.
 
 # Example
-
+```
 clc
 clear all
 close all
@@ -53,4 +53,5 @@ cpuTime=res.cpuTime(end)
 %.plot(res.time,res.component.variable)
 %. etc.
 %.
+```
 
