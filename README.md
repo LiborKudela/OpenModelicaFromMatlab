@@ -3,13 +3,13 @@
 # OpenModelicaFromMatlab
 Tested on OpenModelica v1.13.0-dev-672-g87286cb84,  MD5SUM - c81dc4cd06acabead40ad7cb93417ec1
 
-Build models, execute with flags, anylise results.
+Build models, execute with flags, analyse results.
 Using calls to OMC from Matlab.
 Almost all OM scripting available in Matlab.
 
 # Tutorial
 Firstly we have to create OM_Script.m which is done by following Matlab command 
-(run this always when update OpenModelica)
+(run this always when you update OpenModelica)
 
 ```
 >> CreateOM_Script_class 
@@ -39,7 +39,7 @@ Simulate your model which is inside YourPackage (notice single quotes => it is N
 >> 1st_Script.simulate('YourPackage.YourModel')
 ```
 
-All the above was wrinting a script. Let's make it Sript.mos and and let it run bz OpenModelica Compiler.
+All the above was wrinting a script. Let's make it Sript.mos and and let it run by OpenModelica Compiler.
 The argument in bracket is telling the cmd to run script without start (Wait) or with start (DoNotWait)
 
 ```
@@ -66,13 +66,13 @@ If you do not simulate model but only build the executeble by using:
 >> 1st_Script.build('YourPackage.YourModel')
 ```
 
-Then you can use folowing command to run the executable and use flags like overrides. For example:
+Then you can use folowing command to run the executable and use flags like overrides and so on. For example:
 
 ```
 >> RunBuiltOMModel([string('OMResults\YourPackage.YourModel.exe'),' -override stopTime=3,Component.Parameter1=5'],'Wait')
 ```
 
-The res variable can be obtained in the same way as above.
+The res variable can be created in the same way as in previous example.
 You can write your own function which may run several executables at once.
 You can run the same executable simultaniously several times each with different override.
 You can write wrraper around RunBuiltOMMOdel which can assign overrides automaticaly, 
