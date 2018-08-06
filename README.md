@@ -63,7 +63,7 @@ You can also use flags for compiler.
 If you do not simulate model but only build the executeble by using:
 
 ```
->> 1st_Script.build('YourPackage.YourModel')
+>> 1st_Script.buildModel('YourPackage.YourModel')
 ```
 
 Then you can use folowing command to run the executable and use flags like overrides and so on. For example:
