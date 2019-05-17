@@ -39,8 +39,8 @@ Simulate your model which is inside YourPackage (notice single quotes => it is N
 >> 1st_Script.simulate('YourPackage.YourModel')
 ```
 
-All the above was wrinting a script. Let's make it Sript.mos and and let it run by OpenModelica Compiler.
-The argument in bracket is telling the cmd to run script without start (Wait) or with start (DoNotWait)
+All the above was writting a script. Let's make it Script.mos and let it run by OpenModelica Compiler.
+The argument in the bracket is telling the cmd to run script without start (Wait) or with start (DoNotWait)
 
 ```
 >> 1st_Script.Launch('Wait')
